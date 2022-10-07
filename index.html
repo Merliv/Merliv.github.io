@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sui</title>
+    <script>
+    function rastgelefunc(){
+        let newline;
+        let a = Math.floor(Math.random()*11);
+        let newh3 = document.createElement("h3")
+        if (a<4){
+
+            newh3.innerHTML = "No";
+        }
+        else if (a>=4 && a<=6){
+
+            newh3.innerHTML = "Maybe";
+        }
+        else{
+
+            newh3.innerHTML = "yes";
+
+        }
+        document.body.appendChild(newh3);
+    }
+</script>
+    <style>
+        #button{
+            background-color: red;
+            padding: 15px 60px;
+            font-size: larger;
+            font-family: "Lucida Handwriting";
+
+        }
+        .h1{
+            text-align: center;
+            font-family: "Lucida Handwriting";
+            color: white;
+        }
+        #body1{
+            background-image:url("https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltfcdeffabeec48348/60dc14140401cb0ebfac177e/cc0acdf7dc2968346cc8d86dc76b6763cbb8b8dd.jpg?format=jpg");
+        }
+
+    </style>
+</head>
+<body id="body1">
+    <div id="div2">
+     <h1 class="h1">Kararsız mı kaldın ne yapacağını bilmiyor musun tam sana göre bir şeyimiz var</h1>
+    </div>
+
+    <button id="button" onclick="rastgelefunc()" > bana tıkla </button>
+
+    <div id="div1">
+        <h2 class="h2">Sorularının cevapları:</h2>
+    </div>
+
+</body>
+</html>
